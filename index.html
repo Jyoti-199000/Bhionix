@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharda University</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+<div class="logo-section">
+<img src="sharada.jpg" alt="Sharda University Logo" class="logo"    style="width:120px; height:auto;">
+<img src="naac.jpg" alt="NAAC A+ Accredited" class="naac-logo" style="width:50px; height:auto;">
+</div>
+
+<!-- HAMBURGER BUTTON -->
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+<nav class="nav-links">
+<a href="#">About Sharda</a>
+<a href="#">Programmes</a>
+<a href="#">Global Tie-Ups</a>
+<a href="#">Highlights</a>
+<a href="#">Admissions</a>
+</nav>
+
+</header>
+
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+<div class="left">
+
+<div class="badge">
+<span class="dot"></span>
+ADMISSIONS OPEN 2025-26
+</div>
+
+<h1>
+Empowering <br>
+<span class="gradient">
+<span class="yellow-highlight">Future</span> Leaders
+</span>
+</h1>
+
+<p>
+Join a vibrant community where <b>innovation meets tradition.</b><br>
+We foster academic excellence and holistic development for students
+from over 95 countries.
+</p>
+
+<hr>
+
+<div class="stats">
+
+<div class="stat">
+<div class="icon">🏆</div>
+<div>
+<div class="stat-title">RANKING</div>
+<div class="stat-value">#1 <span>Private</span></div>
+</div>
+</div>
+
+<div class="stat">
+<div class="icon">🌎</div>
+<div>
+<div class="stat-title">DIVERSITY</div>
+<div class="stat-value">95+ <span>Nations</span></div>
+</div>
+</div>
+
+<div class="stat">
+<div class="icon">🎓</div>
+<div>
+<div class="stat-title">PLACEMENT</div>
+<div class="stat-value">100% <span>Support</span></div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FORM CARD -->
+<div class="form-card">
+
+<div class="form-header">
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+
+<div class="form-overlay">
+<span>⭐ PREMIUM EDUCATION</span>
+<h3>Start Your Journey</h3>
+</div>
+
+</div>
+
+
+<div class="form-body">
+
+<div class="row">
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+</div>
+
+<input type="text" placeholder="Phone Number" required>
+
+<div class="row">
+<select required>
+<option>Select Program</option>
+<option>B.Tech</option>
+<option>MBA</option>
+</select>
+
+<select required>
+<option>Select State</option>
+<option>Odisha</option>
+<option>Delhi</option>
+</select>
+</div>
+
+<button onclick="submitForm()">Get Started Now</button>
+
+<p class="terms">
+By registering, you agree to our Terms & Conditions
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- TOP STRIP -->
+<div class="top-strip">
+<div>🌐 GLOBAL OPPORTUNITIES</div>
+<div>📌 ADMISSIONS OPEN 2025</div>
+<div>⭐ NAAC A+ ACCREDITED</div>
+<div>🌐 GLOBAL OPPORTUNITIES</div>
+</div>
+
+<!-- POPULAR PROGRAMS -->
+<section class="program-section">
+
+<div class="section-header">
+
+<span class="badge2">Academics</span>
+
+<h2>Popular Programs</h2>
+
+<p>
+Explore our diverse range of industry-aligned programs designed to launch your career.
+</p>
+
+<div class="tabs">
+<button class="tab active">Engineering</button>
+<button class="tab">Management</button>
+<button class="tab">Law</button>
+<button class="tab">Medical</button>
+<button class="tab">Sciences</button>
+</div>
+
+</div>
+
+
+<div class="program-grid">
+
+<!-- CARD 1 -->
+<div class="program-card">
+
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+
+<div class="program-content">
+
+<h3>B.Tech Computer Science</h3>
+
+<p>AI & Machine Learning Specialization</p>
+
+<div class="tags">
+<span>AI & ML</span>
+<span>Cloud Computing</span>
+<span>Data Science</span>
+</div>
+
+<button class="details-btn" style="color: #0066FF;">
+View Details →
+</button>
+
+</div>
+
+</div>
+
+
+<!-- CARD 2 -->
+<div class="program-card">
+
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
+
+<div class="program-content">
+
+<h3>B.Tech Electronics</h3>
+
+<p>VLSI & Embedded Systems</p>
+
+<div class="tags">
+<span>IoT</span>
+<span>Robotics</span>
+<span>Automation</span>
+</div>
+
+<button class="details-btn" style="color: #0066FF;">
+View Details →
+</button>
+
+</div>
+
+</div>
+
+
+<!-- CARD 3 -->
+<div class="program-card">
+
+<img src="mechanical.jpg">
+
+<div class="program-content">
+
+<h3>B.Tech Mechanical</h3>
+
+<p>Mechatronics & Auto</p>
+
+<div class="tags">
+<span>Automotive</span>
+<span>Thermodynamics</span>
+<span>Design</span>
+</div>
+
+<button class="details-btn" style="color: #0066FF;">
+View Details →
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+.program-card {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .program-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .section-header h2 {
+        font-size: 24px;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .tab {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .program-card {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .program-card img {
+        height: 200px;
+    }
+
+    .program-content h3 {
+        font-size: 16px;
+    }
+
+    .program-content p {
+        font-size: 13px;
+    }
+
+    .tags span {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+
+    .details-btn {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header h2 {
+        font-size: 20px;
+    }
+
+    .section-header p {
+        font-size: 13px;
+    }
+
+    .tabs {
+        gap: 6px;
+    }
+
+    .tab {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+
+    .program-card img {
+        height: 150px;
+    }
+
+    .program-content {
+        padding: 12px;
+    }
+
+    .program-content h3 {
+        font-size: 14px;
+    }
+}
+</style>
+
+
+
+<!-- WHY STUDY -->
+<section class="why-section">
+
+<div class="why-container">
+
+<div class="why-left">
+
+<span class="badge3">
+DISCOVER EXCELLENCE
+</span>
+
+<h2>
+Why Study at <br>
+<span>Sharda University?</span>
+</h2>
+
+<ul>
+<li>NAAC A+ Accredited University</li>
+<li>100 acres of lush green eco-friendly campus</li>
+<li>Top Ranked Among India's Top 50 Universities</li>
+<li>40,000+ Alumni Network across the globe</li>
+<li>Distinguished faculty with global experience</li>
+<li>On-campus 1200+ bed super-specialty hospital</li>
+</ul>
+
+</div>
+
+
+<div class="why-right">
+
+<h3>Sharda Advantages</h3>
+
+<div class="adv-card">
+Global Exposure
+<p>Tie-ups with 250+ global universities</p>
+</div>
+
+<div class="adv-card">
+Industry Ready
+<p>Curriculum designed by industry experts</p>
+</div>
+
+<div class="adv-card">
+Sharda Community
+<p>Students from 95+ countries</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- STATS -->
+<div class="stats2">
+
+<div>
+<h3>03</h3>
+<p>NOBEL LAUREATES</p>
+</div>
+
+<div>
+<h3>1023+</h3>
+<p>PATENTS</p>
+</div>
+
+<div>
+<h3>200+</h3>
+<p>STARTUPS</p>
+</div>
+
+<div>
+<h3>7+</h3>
+<p>STUDENTS</p>
+</div>
+
+<div>
+<h3>1100+</h3>
+<p>FACULTY</p>
+</div>
+
+</div>
+
+<style>
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .why-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .why-left h2 {
+        font-size: 24px;
+    }
+
+    .why-left ul {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .why-right h3 {
+        font-size: 18px;
+    }
+
+    .adv-card {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .adv-card p {
+        font-size: 12px;
+    }
+
+    .stats2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .stats2 h3 {
+        font-size: 20px;
+    }
+
+    .stats2 p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .why-left h2 {
+        font-size: 20px;
+    }
+
+    .why-left h2 br {
+        display: none;
+    }
+
+    .why-left ul {
+        font-size: 13px;
+        gap: 8px;
+    }
+
+    .why-right h3 {
+        font-size: 16px;
+    }
+
+    .adv-card {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .adv-card p {
+        font-size: 11px;
+    }
+
+    .stats2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .stats2 > div {
+        padding: 10px;
+    }
+
+    .stats2 h3 {
+        font-size: 18px;
+    }
+
+    .stats2 p {
+        font-size: 10px;
+    }
+}
+</style>
+
+</section>
+<!-- HALL OF FAME SECTION -->
+
+<section class="hall-section">
+
+<div class="hall-header">
+
+<div class="hall-badge">
+🏆 HALL OF FAME
+</div>
+
+<h2>
+Excellence <span>Recognized</span>
+</h2>
+
+<p>
+Our commitment to academic quality and student success has been consistently
+acknowledged by prestigious national and international bodies.
+</p>
+
+</div>
+
+
+<!-- AWARDS CARDS -->
+
+<div class="hall-cards">
+
+<div class="hall-card">
+<div class="hall-icon gold">🏆</div>
+<h3>NIRF Ranking</h3>
+<div class="label gold-bg">TOP 150</div>
+<p>Ranked among top universities in India by Ministry of Education</p>
+</div>
+
+
+<div class="hall-card">
+<div class="hall-icon green">✔</div>
+<h3>NAAC A+</h3>
+<div class="label green-bg">ACCREDITED</div>
+<p>Highest grade accreditation for quality education and infrastructure</p>
+</div>
+
+
+<div class="hall-card">
+<div class="hall-icon blue">⬢</div>
+<h3>QS I-Gauge</h3>
+<div class="label blue-bg">GOLD RATING</div>
+<p>Awarded Gold University rating for overall excellence</p>
+</div>
+
+
+<div class="hall-card">
+<div class="hall-icon purple">👑</div>
+<h3>ASSOCHAM</h3>
+<div class="label purple-bg">BEST UNIVERSITY</div>
+<p>Recognized for excellence in industry interface and placements</p>
+</div>
+
+</div>
+
+
+<!-- BOTTOM STATS -->
+
+<div class="hall-stats">
+
+<div>
+<p>YEAR LEGACY</p>
+<h3>27+</h3>
+</div>
+
+<div>
+<p>PARTNER UNIVERSITIES</p>
+<h3>250+</h3>
+</div>
+
+<div>
+<p>STARTUPS INCUBATED</p>
+<h3>100+</h3>
+</div>
+
+<div>
+<p>PATENTS PUBLISHED</p>
+<h3>500+</h3>
+</div>
+
+</div>
+
+</section>
+<!-- GLOBAL TIE UPS SECTION -->
+
+<section class="global-section">
+
+<div class="global-container">
+
+<!-- LEFT SIDE -->
+
+<div class="global-left">
+
+<div class="global-badge">
+🌐 GLOBAL TIE-UPS
+</div>
+
+<h2>
+Connecting You to <br>
+<span class="blue">The World's</span>
+<span class="red">Best.</span>
+</h2>
+
+<p class="global-text">
+We have established strategic partnerships with over 
+<b>250+ Prestigious Universities</b> across the globe to provide our students with limitless opportunities.
+</p>
+
+
+<!-- UNIVERSITY LIST -->
+
+<div class="university-list">
+
+<div class="university-card active">
+
+<div>
+<p class="country">USA</p>
+<h3>Harvard Business School</h3>
+<span>Online Certification</span>
+</div>
+
+<div class="dot"></div>
+
+</div>
+
+
+<div class="university-card">
+
+<div>
+<p class="country">UNITED KINGDOM</p>
+<h3>University of Plymouth</h3>
+<span>Student Exchange</span>
+</div>
+
+</div>
+
+
+<div class="university-card">
+
+<div>
+<p class="country">CANADA</p>
+<h3>Western University</h3>
+<span>Research Collaboration</span>
+</div>
+
+</div>
+
+
+<div class="university-card">
+
+<div>
+<p class="country">AUSTRALIA</p>
+<h3>Curtin University</h3>
+<span>Dual Degree</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- RIGHT SIDE -->
+<div class="global-right">
+
+<div class="harvard-card">
+
+<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
+
+<div class="overlay">
+
+<div class="top-tags">
+<span class="tag">USA</span>
+<span class="tag">Est. 2018</span>
+</div>
+
+<h2>Harvard Business School</h2>
+
+<p>
+Executive education programs and case study methodologies for business students.
+</p>
+
+<div class="bottom-tags">
+
+<div class="info">
+<b>15+ Programs</b>
+<span>ACTIVE</span>
+</div>
+
+<div class="info verified">
+✔ Verified
+<span>PARTNERSHIP STATUS</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+@media (max-width: 768px) {
+    .global-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .global-left h2 {
+        font-size: 24px;
+    }
+
+    .global-text {
+        font-size: 14px;
+    }
+
+    .university-list {
+        gap: 12px;
+    }
+
+    .university-card h3 {
+        font-size: 16px;
+    }
+
+    .harvard-card img {
+        height: 250px;
+    }
+
+    .overlay h2 {
+        font-size: 20px;
+    }
+
+    .overlay p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .global-left h2 {
+        font-size: 20px;
+    }
+
+    .global-left h2 br {
+        display: none;
+    }
+
+    .global-text {
+        font-size: 13px;
+    }
+
+    .university-card {
+        padding: 12px;
+    }
+
+    .university-card h3 {
+        font-size: 14px;
+    }
+
+    .country {
+        font-size: 11px;
+    }
+
+    .harvard-card img {
+        height: 200px;
+    }
+
+    .overlay {
+        padding: 15px;
+    }
+
+    .overlay h2 {
+        font-size: 18px;
+    }
+
+    .overlay p {
+        font-size: 12px;
+    }
+
+    .top-tags .tag {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+
+    .bottom-tags {
+        gap: 10px;
+    }
+
+    .info {
+        font-size: 12px;
+    }
+}
+</style>
+<!-- PLACEMENTS SECTION -->
+
+<section class="placement-section">
+
+<div class="placement-header">
+
+<div class="placement-badge">
+Success Stories
+</div>
+
+<h2>
+Top <span>Placements</span>
+</h2>
+
+<p>
+Our students are making a mark in top global companies with record-breaking packages.
+</p>
+
+</div>
+
+
+<!-- PLACEMENT CARDS -->
+
+<div class="placement-grid">
+
+
+<div class="placement-card">
+
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+<h3>Rohit Jain</h3>
+
+<p>B.TECH CSE</p>
+
+<span class="company">Amazon</span>
+
+<div class="salary">₹ 1 Crore</div>
+
+</div>
+
+
+<div class="placement-card">
+
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+<h3>Aakanksha</h3>
+
+<p>MBA</p>
+
+<span class="company">Google</span>
+
+<div class="salary">₹ 50 LPA</div>
+
+</div>
+
+
+<div class="placement-card">
+
+<img src="https://randomuser.me/api/portraits/men/22.jpg">
+
+<h3>Amit Sharma</h3>
+
+<p>B.TECH</p>
+
+<span class="company">Microsoft</span>
+
+<div class="salary">₹ 45 LPA</div>
+
+</div>
+
+
+<div class="placement-card">
+
+<img src="https://randomuser.me/api/portraits/women/65.jpg">
+
+<h3>Priya Singh</h3>
+
+<p>LAW</p>
+
+<span class="company">Khaitan & Co</span>
+
+<div class="salary">₹ 25 LPA</div>
+
+</div>
+
+
+<div class="placement-card">
+
+<img src="https://randomuser.me/api/portraits/men/76.jpg">
+
+<h3>Rahul Verma</h3>
+
+<p>B.DES</p>
+
+<span class="company">Adobe</span>
+
+<div class="salary">₹ 30 LPA</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<img src="sharada.jpg" alt="Sharda University Logo" class="footer-logo" style="width:120px; height:auto;">
+
+<p class="footer-text">
+
+University Grants Commission has empowered Sharda University to award the degrees under Section 22 of UGC Act 1956. It is a full-fledged University and not a deemed University.
+
+</p>
+
+<hr>
+
+<p class="copyright">
+© 2025 Sharda University. All Rights Reserved.
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
